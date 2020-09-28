@@ -25,7 +25,6 @@ Aconselhamos que seja utilizado o Docker para testes, mas se desejar executar a 
 
 ## #TODO:
 - [ ] Adicionar execução através de script uWSGI.
-- [ ] Sanitizar o código melhorando domínios de teste.
 - [ ] Renomear o domínio de teste para algo mais intuitivo.
 - [ ] Adicionar testes unitários.
 - [ ] Adicionar driver MongoDB em "app/core".
