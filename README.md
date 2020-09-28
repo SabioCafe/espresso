@@ -22,14 +22,14 @@ Aconselhamos que seja utilizado o Docker para testes, mas se desejar executar a 
 ---
 
 ## #TODO:
-[] Adicionar execução através de script uWSGI.
-[] Sanitizar o código melhorando domínios de teste.
-[] Renomear o domínio de teste para algo mais intuitivo.
-[] Adicionar testes unitários.
-[] Adicionar driver MongoDB em "app/core".
-[] Adicionar driver Mysql em "app/core".
-[] Adicionar driver PostgreSQL em "app/core".
-[] Adicionar suporte ao Redis em "app/core".
+- [ ] Adicionar execução através de script uWSGI.
+- [ ] Sanitizar o código melhorando domínios de teste.
+- [ ] Renomear o domínio de teste para algo mais intuitivo.
+- [ ] Adicionar testes unitários.
+- [ ] Adicionar driver MongoDB em "app/core".
+- [ ] Adicionar driver Mysql em "app/core".
+- [ ] Adicionar driver PostgreSQL em "app/core".
+- [ ] Adicionar suporte ao Redis em "app/core".
 <br>
 ## Domínios e Bibliotecas:
 O domínio 'File' *(precisamos mudar esse nome)* ,  trabalha manipulando arquivos CSV aplicando um filtro de testes baseado nas regras que poderão ser verificadas mais abaixo.
