@@ -54,7 +54,9 @@ O domínio 'File' *(precisamos mudar esse nome)* ,  trabalha manipulando arquivo
 
 #### /main - [GET]:
 Testar se a rota do domínio está respondendo de acordo, executando no *Controller* do domínio *File*, a função *mainPage()*.
+
 <br>
+
 ***Resposta:***
 ```json
 {
@@ -67,7 +69,9 @@ Testar se a rota do domínio está respondendo de acordo, executando no *Control
 
 #### /checkCsv - [POST]:
 Recebe um conteúdo do tipo *Multipart Form Data*  contendo um arquivo csv e executa uma bateria de testes, antes de consultar cada linha junto a uma API externa de blacklists *(ver regras mais abaixo).*
+
 <br>
+
 ***Exemplo de Arquivo de Entrada:***
 ```csv
 IDMENSAGEM;DDD;CELULAR;OPERADORA;HORARIO_ENVIO;MENSAGEM
@@ -90,7 +94,9 @@ e7b87f43-9aa8-8b62-9cec-f28e653ac25e;34;990171682;VIVO;18:35:20;dui luctus rutru
 
 #### /checkCsvFast - [POST]:
 Recebe um conteúdo do tipo *Multipart Form Data*  contendo um arquivo csv e executa uma bateria de testes *(ver regras mais abaixo)* junto a uma *blacklist*  baixada de uma API externa.
+
 <br>
+
 ***Exemplo de Arquivo de Entrada:***
 ```csv
 IDMENSAGEM;DDD;CELULAR;OPERADORA;HORARIO_ENVIO;MENSAGEM
