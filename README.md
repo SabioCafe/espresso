@@ -38,7 +38,7 @@ Aconselhamos que seja utilizado o Docker para testes, mas se desejar executar a 
 ### Domínio 'File':
 O domínio 'File' *(precisamos mudar esse nome)* ,  trabalha manipulando arquivos CSV aplicando um filtro de testes baseado nas regras que poderão ser verificadas mais abaixo.
 
-#### Bibliotecas do domínio:
+#### *Bibliotecas do domínio:*
 - DictReader
 - jsonify
 - urllib
@@ -48,7 +48,7 @@ O domínio 'File' *(precisamos mudar esse nome)* ,  trabalha manipulando arquivo
 
 <br>
 
-### Endpoints:
+### *Endpoints:*
 
 ---
 
@@ -111,7 +111,7 @@ e7b87f43-9aa8-8b62-9cec-f28e653ac25e;34;990171682;VIVO;18:35:20;dui luctus rutru
 
 ---
 
-### Regras:
+### *Regras:*
 
 * mensagens com telefone inválido deverão ser bloqueadas(DDD+NUMERO);
 * mensagens que estão na _blacklist_ deverão ser bloqueadas; _(ver blacklist)_
