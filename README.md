@@ -53,7 +53,7 @@ O domínio 'File' *(precisamos mudar esse nome)* ,  trabalha manipulando arquivo
 ---
 
 #### /main - [GET]:
-Testar se a rota do domínio está respondendo de acordo, executando no *Controller* do domínio *File*, a função **mainPage()**.
+Testar se a rota do domínio está respondendo de acordo, executando no *Controller* do domínio *File*, a função *mainPage()*.
 <br>
 ***Resposta:***
 ```json
