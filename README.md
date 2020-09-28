@@ -43,8 +43,8 @@ O domínio 'File' *(precisamos mudar esse nome)* ,  trabalha manipulando arquivo
 - HTTPError
 - reduce (functools)
 - datetime
-
-#### Endpoints:
+---
+### Endpoints:
 
 ---
 
