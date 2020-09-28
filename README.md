@@ -38,7 +38,7 @@ Aconselhamos que seja utilizado o Docker para testes, mas se desejar executar a 
 ### Domínio 'File':
 O domínio 'File' *(precisamos mudar esse nome)* ,  trabalha manipulando arquivos CSV aplicando um filtro de testes baseado nas regras que poderão ser verificadas mais abaixo.
 
-#### Bibliotecas do Domínio File:
+#### Bibliotecas do domínio:
 - DictReader
 - jsonify
 - urllib
