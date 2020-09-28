@@ -9,7 +9,9 @@ Para levantar o ambiente é necessário:
 
 #### run:
 `$ docker-compose up`
+
 ---
+
 ### Execução Local:
 Aconselhamos que seja utilizado o Docker para testes, mas se desejar executar a api em seu ambiente local, você poderá efetuar os seguintes passos:
 - Crie o seu próprio *virutalenv* baseado no python 3.8
