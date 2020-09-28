@@ -35,6 +35,15 @@ Aconselhamos que seja utilizado o Docker para testes, mas se desejar executar a 
 
 ## Domínios e Bibliotecas:
 O domínio 'File' *(precisamos mudar esse nome)* ,  trabalha manipulando arquivos CSV aplicando um filtro de testes baseado nas regras que poderão ser verificadas mais abaixo.
+
+#### Bibliotecas do Domínio File:
+- DictReader
+- jsonify
+- urllib
+- HTTPError
+- reduce (functools)
+- datetime
+
 Este domínio possui os seguintes *endpoints*:
 
 ---
@@ -146,11 +155,3 @@ Exemplos:
 * 41**8**87563653 - nok
 
 ---
-
-#### Bibliotecas do Domínio File:
-- DictReader
-- jsonify
-- urllib
-- HTTPError
-- reduce (functools)
-- datetime
