@@ -30,7 +30,9 @@ Aconselhamos que seja utilizado o Docker para testes, mas se desejar executar a 
 - [ ] Adicionar driver Mysql em "app/core".
 - [ ] Adicionar driver PostgreSQL em "app/core".
 - [ ] Adicionar suporte ao Redis em "app/core".
+
 <br>
+
 ## Domínios e Bibliotecas:
 O domínio 'File' *(precisamos mudar esse nome)* ,  trabalha manipulando arquivos CSV aplicando um filtro de testes baseado nas regras que poderão ser verificadas mais abaixo.
 Este domínio possui os seguintes *endpoints*:
