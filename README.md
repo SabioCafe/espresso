@@ -2,7 +2,7 @@
 Api em Flask com intenção de ser escalável, com estrutura pensada para seguir um padrão *Domain Drive Design*. O nome *espresso* veio em homenagem ao grande companheiro dos desenvolvedores, o café expresso.
 
 ### Execução Docker:
-O *espresso* possui um ambiente Docker pronto para levantar o ambiente necessário, localmente. 
+O repositório possui ambiente Docker pronto para levantar a estrutura necessária, localmente. 
 
 Para levantar o ambiente é necessário:
 - Adicionar um arquivo *.env* baseado no arquivo *.env_example*.
@@ -60,8 +60,8 @@ Testar se a rota do domínio está respondendo de acordo, executando no *Control
 ***Resposta:***
 ```json
 {
-	"message": "Main Success",
-	"status": 200
+  "message": "Main Success",
+  "status": 200
 }
 ```
 
@@ -73,6 +73,9 @@ Recebe um conteúdo do tipo *Multipart Form Data*  contendo um arquivo csv e exe
 <br>
 
 ***Exemplo de Arquivo de Entrada:***
+
+O arquivo *file-example.csv* contido no repositório, poderá ser utilizado para testes.
+
 ```csv
 IDMENSAGEM;DDD;CELULAR;OPERADORA;HORARIO_ENVIO;MENSAGEM
 bff58d7b-8b4a-456a-b852-5a3e000c0e63;2;996958849;NEXTEL;21:24:03;sapien sapien non mi integer ac neque duis bibendum
@@ -86,9 +89,9 @@ e7b87f43-9aa8-8b62-9cec-f28e653ac25e;34;990171682;VIVO;18:35:20;dui luctus rutru
 ***Resposta:***
 ```json
 [
-	"66sr7f43-43fx-414b-0poi-knjsd87j4843;1",
-	"d81b2696-8b62-4b8b-af82-586ce0875ebc;1",
-	"qwe8byy7-3j6k-8x5k-0ut5-jk2h34mfk34h;2"
+  "66sr7f43-43fx-414b-0poi-knjsd87j4843;1",
+  "d81b2696-8b62-4b8b-af82-586ce0875ebc;1",
+  "qwe8byy7-3j6k-8x5k-0ut5-jk2h34mfk34h;2"
 ]
 ```
 
@@ -100,6 +103,9 @@ Recebe um conteúdo do tipo *Multipart Form Data*  contendo um arquivo csv e exe
 <br>
 
 ***Exemplo de Arquivo de Entrada:***
+
+O arquivo *file-example.csv* contido no repositório, poderá ser utilizado para testes.
+
 ```csv
 IDMENSAGEM;DDD;CELULAR;OPERADORA;HORARIO_ENVIO;MENSAGEM
 bff58d7b-8b4a-456a-b852-5a3e000c0e63;2;996958849;NEXTEL;21:24:03;sapien sapien non mi integer ac neque duis bibendum
@@ -113,9 +119,9 @@ e7b87f43-9aa8-8b62-9cec-f28e653ac25e;34;990171682;VIVO;18:35:20;dui luctus rutru
 ***Resposta:***
 ```json
 [
-	"66sr7f43-43fx-414b-0poi-knjsd87j4843;1",
-	"d81b2696-8b62-4b8b-af82-586ce0875ebc;1",
-	"qwe8byy7-3j6k-8x5k-0ut5-jk2h34mfk34h;2"
+  "66sr7f43-43fx-414b-0poi-knjsd87j4843;1",
+  "d81b2696-8b62-4b8b-af82-586ce0875ebc;1",
+  "qwe8byy7-3j6k-8x5k-0ut5-jk2h34mfk34h;2"
 ]
 ```
 
