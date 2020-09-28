@@ -81,6 +81,8 @@ e7b87f43-9aa8-8b62-9cec-f28e653ac25e;34;990171682;VIVO;18:35:20;dui luctus rutru
 66sr7f43-43fx-414b-0poi-knjsd87j4843;34;990171682;VIVO;18:35:19;dui in sagittis dui
 ```
 
+<br>
+
 ***Resposta:***
 ```json
 [
@@ -105,6 +107,8 @@ b7e2af69-ce52-4812-adf1-395c8875ad30;69;949360612;CLARO;19:05:21;justo lacinia e
 e7b87f43-9aa8-8b62-9cec-f28e653ac25e;34;990171682;VIVO;18:35:20;dui luctus rutrum nulla tellus in sagittis dui
 66sr7f43-43fx-414b-0poi-knjsd87j4843;34;990171682;VIVO;18:35:19;dui in sagittis dui
 ```
+
+<br>
 
 ***Resposta:***
 ```json
