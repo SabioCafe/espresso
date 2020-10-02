@@ -1,3 +1,3 @@
-from .File.Controller import FileController
-from .File.Service import FileService
+from .Example.Controller import ExampleController
+from .Example.Service import ExampleService
 # from .File.Repository import RepositoryController
