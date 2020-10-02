@@ -3,11 +3,11 @@ from flask import Blueprint, jsonify, request
 from flask import current_app as app
 
 
-from src.Domains import FileController
+from src.Domains import ExampleController
 
 from csv import DictReader
 
-fileController = FileController()
+exampleController = ExampleController()
 file_urls = Blueprint('RouterFile', __name__)
 
 
@@ -18,16 +18,16 @@ def default():
 
 @file_urls.route('/main', methods=['GET'])
 def main():
-    return fileController.mainPage()
+    return exampleController.mainPage()
 
 
 @file_urls.route('/checkCsv', methods=['POST'])
 def checkCsv():
     output = request.files['file'].read().decode('utf8')
-    return fileController.checkNumbers(output)
+    return exampleController.checkNumbers(output)
 
 
 @file_urls.route('/checkCsvFast', methods=['POST'])
 def checkCsvFast():
     output = request.files['file'].read().decode('utf8')
-    return fileController.checkNumbersFast(output)
+    return exampleController.checkNumbersFast(output)

@@ -4,7 +4,7 @@ import json
 from urllib.error import HTTPError
 
 
-class FileService(Service):
+class ExampleService(Service):
     def getEndpoint(self):
         return self._endpoint
 

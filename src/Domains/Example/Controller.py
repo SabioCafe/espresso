@@ -1,10 +1,10 @@
 from flask import jsonify
-from .Service import FileService
+from .Service import ExampleService
 
 
-class FileController:
+class ExampleController:
     def __init__(self):
-        self._fileService = FileService()
+        self._fileService = ExampleService()
 
     def mainPage(self):
         return jsonify({"status": 200, "message": "Main Success"})
