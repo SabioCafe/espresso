@@ -8,7 +8,7 @@ from src.Domains import ExampleController
 from csv import DictReader
 
 exampleController = ExampleController()
-file_urls = Blueprint('RouterFile', __name__)
+file_urls = Blueprint('RouterExample', __name__)
 
 
 @file_urls.route('/', methods=['GET'])
