@@ -19,13 +19,13 @@ Aconselhamos que seja utilizado o Docker para testes, mas se desejar executar a 
 - Registre as variáveis do arquivo *.env_example* junto ao seu *virtualenv*
 
 #### run:
-`$(venv) flask run`
+`$(venv) uwsgi --ini="uwsgi.ini"`
 
 ---
 
 ## #TODO:
-- [ ] Adicionar execução através de script uWSGI.
-- [ ] Renomear o domínio de teste 'File' para algo mais intuitivo.
+- [x] Adicionar execução através de script uWSGI.
+- [x] Renomear o domínio de teste 'File' para algo mais intuitivo.
 - [ ] Adicionar driver MongoDB em "app/core".
 - [ ] Adicionar driver Mysql em "app/core".
 - [ ] Adicionar driver PostgreSQL em "app/core".
