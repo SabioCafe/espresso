@@ -10,4 +10,4 @@ services:
     working_dir: /flask
     env_file:
       - .env
-    command: flask run
+    command: uwsgi --ini="uwsgi.ini"
