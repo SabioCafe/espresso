@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, jsonify
 
 
 def create_app():
@@ -8,4 +8,9 @@ def create_app():
     with app.app_context():
         from src.app.Router import file_urls
         app.register_blueprint(file_urls)
-        return app
+
+    @app.route('/', methods=['GET'])
+    def _index():
+        return jsonify({"status": 200, "message": "espresso v1.0"})
+
+    return app
