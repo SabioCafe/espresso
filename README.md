@@ -35,8 +35,8 @@ Aconselhamos que seja utilizado o Docker para testes, mas se desejar executar a 
 
 ## Domínios e Bibliotecas:
 
-### Domínio 'Example':
-O domínio 'Example' serve apenas como teste para iniciar o desenvolvimento da API.
+### Domínio 'example':
+O domínio 'example' serve apenas como teste para iniciar o desenvolvimento da API.
 
 ### *Bibliotecas do domínio:*
 - jsonify

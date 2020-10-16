@@ -6,7 +6,7 @@ def create_app():
     #app.config.from_object('config')
 
     with app.app_context():
-        from src.app.Router import file_urls
+        from app.core.router import file_urls
         app.register_blueprint(file_urls)
 
     @app.route('/', methods=['GET'])
