@@ -1,4 +1,4 @@
-from src.app.Classes import Service
+from app.core.classes import Service
 
 import json
 from urllib.error import HTTPError
