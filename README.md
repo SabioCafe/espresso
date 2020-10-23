@@ -7,8 +7,12 @@ O repositório possui ambiente Docker pronto para levantar a estrutura necessár
 Para levantar o ambiente é necessário:
 - Adicionar um arquivo *.env* baseado no arquivo *.env_example*.
 
-#### run:
-`$ docker-compose up`
+## Docker:
+#### run install:
+`$ docker-compose -f docker-compose.yml -f docker-install.yml up`
+
+#### run dev:
+`$ docker-compose -f docker-compose.yml -f docker-dev.yml up`
 
 ---
 
