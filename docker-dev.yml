@@ -1,0 +1,5 @@
+version: "3"
+
+services:
+  espresso_api:
+    command: uwsgi --ini="uwsgi.ini"

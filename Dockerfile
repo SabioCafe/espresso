@@ -6,5 +6,4 @@ RUN apk add --virtual .build-dependencies \
             linux-headers \
             pcre-dev
 
-ADD requirements.txt /
-RUN pip install -r /requirements.txt
+ENV PATH /flask/lib:/flask/lib/bin:$PATH

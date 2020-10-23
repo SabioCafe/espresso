@@ -1,7 +1,7 @@
 version: "3"
 
 services:
-  api-modelo:
+  espresso_api:
     build: ./
     ports:
       - 3000:3000
@@ -10,4 +10,3 @@ services:
     working_dir: /flask
     env_file:
       - .env
-    command: uwsgi --ini="uwsgi.ini"
