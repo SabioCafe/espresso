@@ -7,3 +7,4 @@ RUN apk add --virtual .build-dependencies \
             pcre-dev
 
 ENV PATH /flask/lib:/flask/lib/bin:$PATH
+ENV PYTHONPATH /flask/lib:/flask/lib/bin:$PYTHONPATH
