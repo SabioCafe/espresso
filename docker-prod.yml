@@ -1,0 +1,5 @@
+version: "3"
+
+services:
+  espresso_api:
+    command: uwsgi --log-5xx --disable-logging --logto=uwsgi.log --ini="uwsgi.ini"
