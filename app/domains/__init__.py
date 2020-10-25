@@ -1,3 +1,4 @@
-from .example.Controller import ExampleController
-from .example.Service import ExampleService
-# from .File.Repository import RepositoryController
+"""Example Facade Module"""
+from .example.controller import ExampleController
+from .example.service import ExampleService
+# from .File.repository import RepositoryController

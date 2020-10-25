@@ -1,4 +1,4 @@
 Flask
 python-dotenv
 uwsgi
-mysqlclient
+mysql-connector-python
