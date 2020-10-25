@@ -9,3 +9,8 @@ class Repository():
         """Constructor"""
         self.database = MySqlDriver()
         self.table = table
+
+    def query(self):
+        """Execute a query on database"""
+        print(self.table)
+        return self.database.query('SHOW DATABASES;')

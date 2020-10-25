@@ -6,8 +6,11 @@ from .repository import ExempleRepository
 
 class ExampleService(Service):
     """Example's Domain Service Class"""
+
     def __init__(self):
+        """Constructor"""
         self.repository = ExempleRepository()
+        super().__init__()
 
     def get_request(self, params=None):
         """get_request function"""
@@ -17,7 +20,7 @@ class ExampleService(Service):
         except HTTPError as err:
             if err.code == 404:
                 return None
-    
-    def check_conn(self):
+
+    def show_databases(self):
         """check database connection"""
-        return self.repository.check_conn()
+        return self.repository.query()

@@ -29,18 +29,16 @@ class MySqlDriver():
         except errors.Error as err:
             print(err)
 
-    def check_conn(self):
+    def query(self, query: str, data: tuple = ()) -> dict:
         """Check database connection"""
         try:
-            database = self.cnxpool.get_connection()
-            cursor = database.cursor(dictionary=True)
-            cursor.execute("SHOW DATABASES;")
+            cnx = self.cnxpool.get_connection()
+            cursor = cnx.cursor()
+            cursor.execute(query, data)
+            result = cursor.fetchall()
+            cursor.close()
+            return result
 
-            rows = []
-            for row in cursor:
-                rows.append(row)
-            
-            return rows
         except errors.Error as err:
             print(err)
             return False

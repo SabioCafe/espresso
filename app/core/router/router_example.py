@@ -11,6 +11,7 @@ def main():
     """Main Function"""
     return example_controller.main_page()
 
-@file_urls.route('/check_conn', methods=['GET'])
-def check_conn():
-    return example_controller.check_conn()
+@file_urls.route('/check_db', methods=['GET'])
+def check_db():
+    """List available databases"""
+    return example_controller.check_databases()

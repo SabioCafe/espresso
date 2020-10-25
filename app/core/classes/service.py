@@ -6,8 +6,8 @@ class Service():
     """Service Super Class"""
 
     def __init__(self):
+        """Constructor"""
         self._endpoint = r'https://localhost:4000'
-        # todo: add headers (instance of Request class)
 
     def get(self, params=None):
         """GET method from Service Super Class"""
