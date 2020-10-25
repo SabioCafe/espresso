@@ -31,7 +31,7 @@ Aconselhamos que seja utilizado o Docker para testes, mas se desejar executar a 
 - [x] Adicionar execução através de script uWSGI.
 - [x] Renomear o domínio de teste 'File' para algo mais intuitivo.
 - [ ] Adicionar driver MongoDB em "app/core".
-- [ ] Adicionar driver Mysql em "app/core".
+- [x] Adicionar driver Mysql em "app/core".
 - [ ] Adicionar driver PostgreSQL em "app/core".
 - [ ] Adicionar suporte ao Redis em "app/core".
 
