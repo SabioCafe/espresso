@@ -10,3 +10,7 @@ file_urls = Blueprint('router_example', __name__)
 def main():
     """Main Function"""
     return example_controller.main_page()
+
+@file_urls.route('/check_conn', methods=['GET'])
+def check_conn():
+    return example_controller.check_conn()
