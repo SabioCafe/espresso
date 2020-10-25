@@ -29,7 +29,7 @@ class MySqlDriver():
         except errors.Error as err:
             print(err)
 
-    def query(self, query: str, data: tuple = ()) -> dict:
+    def query(self, query: str, data: tuple = ()) -> dict or False:
         """Check database connection"""
         try:
             cnx = self.cnxpool.get_connection()
