@@ -5,7 +5,11 @@ RUN apk add --virtual .build-dependencies \
             mariadb-dev \
             build-base \
             linux-headers \
-            pcre-dev
+            pcre-dev \
+            bash
+
+COPY requirements.txt /requirements.txt
+RUN pip install -r requirements.txt
 
 ENV PATH /flask/lib:/flask/lib/bin:$PATH
 ENV PYTHONPATH /flask/lib:/flask/lib/bin:$PYTHONPATH

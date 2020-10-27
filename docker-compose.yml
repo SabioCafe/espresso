@@ -1,19 +1,52 @@
-version: "3"
+version: "3.8"
 
 services:
-  espresso_api:
-    build: ./
+  espresso:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+      args:
+        ENVIRONMENT: ${APP_ENV}
+    command: uwsgi --log-5xx --disable-logging --logto=uwsgi.log --ini="uwsgi.ini"
     ports:
       - 3000:3000
     volumes:
-      - .:/flask
-    working_dir: /flask
+      - .:/app
+    working_dir: /app
     env_file:
       - .env
     depends_on:
       - database
-  
+
   database:
+    image: mariadb:latest
+    ports:
+      - 3306:3306
+    volumes:
+      - ./app/core/databases/mysql-data:/var/lib/mysql
+    env_file:
+      - .env
+  
+  espresso-dev:
+    container_name: espresso-dev
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+      args:
+        ENVIRONMENT: ${APP_ENV}
+    command: ["./wait-for-it.sh", "database-dev:3306", "--", "uwsgi", "--py-autoreload=1", "--ini=uwsgi.ini"] 
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/app
+    working_dir: /app
+    env_file:
+      - .env
+    depends_on:
+      - database-dev
+
+  database-dev:
+    container_name: database-dev
     image: mariadb:latest
     ports:
       - 3306:3306
