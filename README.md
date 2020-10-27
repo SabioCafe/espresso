@@ -8,11 +8,7 @@ Para levantar o ambiente é necessário:
 - Adicionar um arquivo *.env* baseado no arquivo *.env_example*.
 
 ## Docker:
-#### run install:
-`$ docker-compose -f docker-compose.yml -f docker-install.yml up`
-
-#### run dev:
-`$ docker-compose -f docker-compose.yml -f docker-dev.yml up`
+`$ make run`
 
 ---
 
