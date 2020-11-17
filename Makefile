@@ -16,3 +16,12 @@ clean: env
 	sudo rm -rf app/core/databases/mysql-data
 	docker rmi --force espresso_api-dev
 	docker container prune --force --filter "label=project=espresso"
+
+lint:
+	pylint app/*
+
+pydocstyle:
+	pydocstyle app/
+
+isort:
+	isort app/

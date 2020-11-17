@@ -1,6 +1,8 @@
 """Example's domain Service Module"""
 from urllib.error import HTTPError
+
 from app.core.classes import Service
+
 from .repository import ExempleRepository
 
 

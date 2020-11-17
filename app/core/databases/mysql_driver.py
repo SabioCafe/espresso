@@ -5,8 +5,8 @@ Docs: https://dev.mysql.com/doc/connector-python/en/connector-python-api-mysqlco
 """
 from os import environ
 
-from mysql.connector.pooling import MySQLConnectionPool
 from mysql.connector import errors
+from mysql.connector.pooling import MySQLConnectionPool
 
 
 class MySqlDriver():

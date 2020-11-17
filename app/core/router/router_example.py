@@ -1,5 +1,6 @@
 """Example Domain's Router File"""
 from flask import Blueprint
+
 from app.domains import ExampleController
 
 example_controller = ExampleController()

@@ -1,5 +1,6 @@
 """Example's domain Controller Module"""
 from flask import jsonify
+
 from .service import ExampleService
 
 
