@@ -22,7 +22,7 @@ class MySqlDriver():
             "port": int(environ.get('MYSQL_PORT', 3306)),
             "pool_name": "mysql_pool",
             "pool_size": 5,
-            "pool_reset_session": True,
+            "pool_reset_session": False, # MySQL version 5.7.2 and earlier does not support COM_RESET_CONNECTION.
         }
         try:
             self.cnxpool = MySQLConnectionPool(**self.config)
@@ -36,9 +36,12 @@ class MySqlDriver():
             cursor = cnx.cursor()
             cursor.execute(query, data)
             result = cursor.fetchall()
-            cursor.close()
             return result
 
         except errors.Error as err:
             print(err)
             return False
+
+        finally:
+            cursor.close()
+            cnx.close()
