@@ -17,7 +17,7 @@ class ExampleService(Service):
     def get_request(self, params=None):
         """get_request function"""
         try:
-            return self.get(f'{params}')
+            return self.get(f"{params}")
 
         except HTTPError as err:
             if err.code == 404:

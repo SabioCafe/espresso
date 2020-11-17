@@ -7,4 +7,4 @@ class ExempleRepository(Repository):
 
     def __init__(self):
         """Constructor"""
-        super().__init__(table='example_table')
+        super().__init__(table="example_table")
