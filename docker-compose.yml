@@ -1,7 +1,7 @@
 version: "3.8"
 
 services:
-  espresso:
+  api:
     build:
       context: .
       dockerfile: ./Dockerfile
@@ -9,7 +9,7 @@ services:
         ENVIRONMENT: ${APP_ENV}
     command: [
       "./wait-for-it.sh",
-      "database-dev:3306", 
+      "espresso-db:3306", 
       "--", 
       "uwsgi", 
       "--log-5xx", 
@@ -36,11 +36,13 @@ services:
     env_file:
       - .env
   
-  espresso-dev:
+  api-dev:
     container_name: espresso-dev
     build:
       context: .
       dockerfile: ./Dockerfile
+      labels:
+        project: "espresso"
       args:
         ENVIRONMENT: ${APP_ENV}
     command: [
@@ -59,11 +61,27 @@ services:
     env_file:
       - .env
     depends_on:
-      - database-dev
+      - espresso-db
+  
+  # espresso-install:
+  #   container_name: espresso-dev
+  #   build:
+  #     context: .
+  #     dockerfile: ./Dockerfile
+  #     args:
+  #       ENVIRONMENT: ${APP_ENV}
+  #   volumes:
+  #     - .:/app
+  #   working_dir: /app
+  #   command: pip install -r requirements.txt -t /app/lib
 
-  database-dev:
+  espresso-db:
     container_name: database-dev
     image: mariadb:latest
+    build:
+      context: .
+      labels:
+        project: "espresso"
     ports:
       - 3306:3306
     volumes:
