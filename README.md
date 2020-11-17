@@ -15,7 +15,7 @@ Para levantar o ambiente é necessário:
 ### Execução ambiente dev:
 `$ make run`
 
-### Remoção de containers & diretórios *lib* e *mysql-database*:
+### Remoção de containers & diretórios *lib* e *mysql-data*:
 `$ make clean`
 
 ---
