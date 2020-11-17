@@ -3,9 +3,9 @@ env:
 
 run: env
 ifeq ($(APP_ENV), development)
-	docker-compose up espresso-db api-dev
+	docker-compose up db-espresso-dev api-dev
 else
-	docker-compose up database api
+	docker-compose up db-espresso api
 endif
 
 install: env
