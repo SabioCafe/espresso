@@ -1,11 +1,11 @@
-"""app main function"""
+"""app main function."""
 from flask import Flask, jsonify
 
 from app.core.router import file_urls
 
 
 def create_app():
-    """create_app function"""
+    """create_app function."""
     app = Flask(__name__)
     # app.config.from_object('config')
 

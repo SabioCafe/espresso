@@ -1,4 +1,4 @@
-"""Example Facade Module"""
+"""Example Facade Module."""
 from .example.controller import ExampleController
 from .example.service import ExampleService
 

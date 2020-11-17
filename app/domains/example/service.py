@@ -1,4 +1,4 @@
-"""Example's domain Service Module"""
+"""Example's domain Service Module."""
 from urllib.error import HTTPError
 
 from app.core.classes import Service
@@ -7,15 +7,15 @@ from .repository import ExempleRepository
 
 
 class ExampleService(Service):
-    """Example's Domain Service Class"""
+    """Example's Domain Service Class."""
 
     def __init__(self):
-        """Constructor"""
+        """Example-Service Constructor."""
         self.repository = ExempleRepository()
         super().__init__()
 
     def get_request(self, params=None):
-        """get_request function"""
+        """get_request function."""
         try:
             return self.get(f"{params}")
 
@@ -24,5 +24,5 @@ class ExampleService(Service):
                 return None
 
     def show_databases(self):
-        """check database connection"""
+        """Check database connection."""
         return self.repository.query()

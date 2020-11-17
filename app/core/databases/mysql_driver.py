@@ -1,5 +1,5 @@
 """
-MySQL Driver
+MySQL Driver.
 
 Docs: https://dev.mysql.com/doc/connector-python/en/connector-python-api-mysqlconnectionpool.html
 """
@@ -10,10 +10,10 @@ from mysql.connector.pooling import MySQLConnectionPool
 
 
 class MySqlDriver:
-    """MySQL driver class"""
+    """MySQL driver class."""
 
     def __init__(self):
-        """Constructor"""
+        """Mysqldriver Constructor."""
         self.config = {
             "host": "db-espresso-dev"
             if environ.get("APP_ENV") == "development"
@@ -32,7 +32,7 @@ class MySqlDriver:
             print(err)
 
     def query(self, query: str, data: tuple = ()) -> dict or False:
-        """Check database connection"""
+        """Check database connection."""
         try:
             cnx = self.cnxpool.get_connection()
             cursor = cnx.cursor()

@@ -1,15 +1,15 @@
-"""Repository Module"""
+"""Repository Module."""
 from app.core.databases import MySqlDriver
 
 
 class Repository:
-    """Repository Super Class"""
+    """Repository Super Class."""
 
     def __init__(self, table: str = None):
-        """Constructor"""
+        """Repository Constructor."""
         self.database = MySqlDriver()
         self.table = table
 
     def query(self):
-        """Execute a query on database"""
+        """Execute a query on database."""
         return self.database.query("SHOW DATABASES;")
