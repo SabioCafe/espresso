@@ -38,6 +38,8 @@ Aconselhamos que seja utilizado o Docker para testes, mas se desejar executar a 
 - [x] Adicionar driver Mysql em "app/core".
 - [ ] Adicionar driver PostgreSQL em "app/core".
 - [ ] Adicionar suporte ao Redis em "app/core".
+- [ ] Melhorar código por linters.
+- [ ] Criar comando 'make lint'.
 
 <br>
 
