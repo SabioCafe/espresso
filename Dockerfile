@@ -9,7 +9,6 @@ RUN apk add --virtual .build-dependencies \
             bash
 
 COPY requirements.txt /requirements.txt
-RUN pip install -r requirements.txt
 
-ENV PATH /flask/lib:/flask/lib/bin:$PATH
-ENV PYTHONPATH /flask/lib:/flask/lib/bin:$PYTHONPATH
+ENV PATH /app/lib:/app/lib/bin:$PATH
+ENV PYTHONPATH /app/lib:/app/lib/bin:$PYTHONPATH

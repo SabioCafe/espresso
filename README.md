@@ -8,7 +8,15 @@ Para levantar o ambiente é necessário:
 - Adicionar um arquivo *.env* baseado no arquivo *.env_example*.
 
 ## Docker:
+
+### Instalação:
+`$ make install`
+
+### Execução ambiente dev:
 `$ make run`
+
+### Remoção de containers & diretórios *lib* e *mysql-database*:
+`$ make clean`
 
 ---
 

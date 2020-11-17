@@ -15,7 +15,7 @@ class MySqlDriver():
     def __init__(self):
         """Constructor"""
         self.config = {
-            "host": 'database-dev' if environ.get('APP_ENV') == 'development' else environ.get('MYSQL_HOST'),
+            "host": 'db-espresso-dev' if environ.get('APP_ENV') == 'development' else environ.get('MYSQL_HOST'),
             "database": environ.get('MYSQL_DATABASE', 'espresso_db'),
             "user": environ.get('MYSQL_USER', 'root'),
             "password": environ.get('MYSQL_ROOT_PASSWORD', 'strawberry'),
