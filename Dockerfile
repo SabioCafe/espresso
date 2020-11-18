@@ -8,7 +8,5 @@ RUN apk add --virtual .build-dependencies \
             pcre-dev \
             bash
 
-COPY requirements.txt /requirements.txt
-
 ENV PATH /app/lib:/app/lib/bin:$PATH
 ENV PYTHONPATH /app/lib:/app/lib/bin:$PYTHONPATH
