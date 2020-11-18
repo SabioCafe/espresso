@@ -32,7 +32,7 @@ class MySqlDriver:
             print(err)
 
     def query(self, query: str, data: tuple = ()) -> dict or False:
-        """Check database connection."""
+        """Execute a query on database instance."""
         try:
             cnx = self.cnxpool.get_connection()
             cursor = cnx.cursor()
