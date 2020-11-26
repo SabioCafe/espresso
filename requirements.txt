@@ -2,3 +2,4 @@ Flask
 python-dotenv
 uwsgi
 mysql-connector-python
+.

@@ -1,6 +1,4 @@
 """Example domain Controller Module."""
-from flask import jsonify
-
 from .service import ExampleService
 
 
@@ -14,9 +12,9 @@ class ExampleController:
     @staticmethod
     def main_page():
         """main_page function."""
-        return jsonify({"status": 200, "message": "Main Success"})
+        return {"status": 200, "message": "Main Success"}, 200
 
     def check_databases(self):
         """main_page function."""
         response = self.file_service.show_databases()
-        return jsonify({"status": 200, "message": response})
+        return {"status": 200, "message": response}, 200

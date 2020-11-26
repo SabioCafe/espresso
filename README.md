@@ -62,7 +62,7 @@ O domínio 'example' serve apenas como teste para iniciar o desenvolvimento da A
 ---
 
 #### /main - [GET]:
-Testar se a rota do domínio está respondendo de acordo, executando no *Controller* do domínio *File*, a função *mainPage()*.
+Testa se a rota do domínio está respondendo de acordo, executando no *Controller* do domínio *File*, a função *mainPage()*.
 
 <br>
 
@@ -74,4 +74,45 @@ Testar se a rota do domínio está respondendo de acordo, executando no *Control
 }
 ```
 
+#### /check_db - [GET]:
+Testa a comunicação com o banco. Retorna os bancos disponíveis na base.
+
+<br>
+
+***Resposta:***
+```json
+{
+  "message": [
+    [
+      "espresso_db"
+    ],
+    [
+      "information_schema"
+    ],
+    [
+      "mysql"
+    ],
+    [
+      "performance_schema"
+    ]
+  ],
+  "status": 200
+}
+```
+
 ---
+
+### *CLI:*
+
+---
+
+#### espresso hello:
+```
+Usage: espresso hello [OPTIONS]
+
+  Custom command example.
+
+Options:
+  --name TEXT  Your name.
+  --help       Show this message and exit.
+```
