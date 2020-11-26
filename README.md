@@ -18,6 +18,9 @@ Para levantar o ambiente é necessário:
 ### Remoção de containers & diretórios *lib* e *mysql-data*:
 `$ make clean`
 
+### Executando CLI:
+`$ make greet`
+
 ---
 
 ### Execução Local:
