@@ -110,7 +110,7 @@ Testa a comunicação com o banco. Retorna os bancos disponíveis na base.
 ```
 Usage: espresso hello [OPTIONS]
 
-  Custom command example.
+  A greet function.
 
 Options:
   --name TEXT  Your name.
