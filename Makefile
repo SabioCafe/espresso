@@ -11,6 +11,9 @@ endif
 install: env
 	docker-compose run api-dev pip install -r requirements.txt -t lib
 
+greet: env
+	docker-compose run api-dev espresso hello
+
 clean: env
 	sudo rm -rf lib
 	sudo rm -rf app/core/databases/mysql-data
