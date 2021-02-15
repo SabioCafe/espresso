@@ -3,4 +3,5 @@ python-dotenv
 uwsgi
 mysql-connector-python
 mypy
+coverage
 .
