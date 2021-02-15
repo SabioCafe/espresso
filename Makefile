@@ -33,4 +33,4 @@ black:
 	black --line-length 110 --target-version py37
 
 coverage:
-	coverage run --source app -m unittest app/core/tests/**/*.py && coverage report -m --fail-under=95
+	coverage run --source app -m unittest app/core/tests/**/*.py && coverage report -m --fail-under=75
