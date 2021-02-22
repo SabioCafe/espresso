@@ -45,7 +45,7 @@ Aconselhamos que seja utilizado o Docker para testes, mas se desejar executar a 
 - [x] Criar comando 'make lint'.
 - [ ] Criar paradigma de migrations.
 - [ ] Criar entidades/models de exemplo.
-- [ ] Incluír unittest.
+- [x] Incluír unittest.
 
 
 <br>
