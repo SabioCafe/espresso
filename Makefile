@@ -20,7 +20,7 @@ clean: env
 	docker rmi --force espresso_api-dev
 	docker container prune --force --filter "label=project=espresso"
 
-lint:
+pylint:
 	pylint app/*
 
 pydocstyle:
@@ -30,7 +30,7 @@ isort:
 	isort app/
 
 black:
-	black --line-length 110 --target-version py37
+	black --line-length 110 --target-version py37 app/
 
 coverage:
 	coverage run --source app -m unittest app/core/tests/**/*.py && coverage report -m --fail-under=75

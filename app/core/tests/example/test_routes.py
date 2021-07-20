@@ -6,6 +6,7 @@ from app.main import create_app
 
 app = create_app()
 
+
 class TestRoutes(unittest.TestCase):
     """TestRoutes unittest class."""
 
@@ -18,7 +19,6 @@ class TestRoutes(unittest.TestCase):
         """Tests if the endpoint has returned success."""
         response = self.client.get("/main")
         self.assertEqual(response.status_code, 200)
-
 
     def tearDown(self):
         """Function to be executed at the end of the test's execution."""

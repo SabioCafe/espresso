@@ -1,8 +1,9 @@
 """app main function."""
 from flask import Flask
 from flask.cli import FlaskGroup
-from app.core.router import urls_example
+
 from app.core.cli import greet
+from app.core.router import urls_example
 
 
 def create_app():
